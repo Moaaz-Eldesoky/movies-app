@@ -14,4 +14,12 @@ export class MoviesService {
       return this._HttpClient.get(url);
     }
   }
+  getMovieDetails(movie_id:string):Observable<any>{
+    {
+      const apiKey = 'f756cea9d43b34a22be30e61cd5275c3';
+      const url = `https://api.themoviedb.org/3/movie/${movie_id}?api_key=${apiKey}`;
+      return this._HttpClient.get(url);
+    }
+  }
+
 }

@@ -7,7 +7,7 @@
   </div>
 
   <div *ngFor="let movie of trendingMovies" class="col-2 position-relative">
-      <div class="movie ">
+      <div [routerLink]="['/moviedetails',movie.id]" class="movie ">
         <img [src]="imagePrefix+movie.poster_path" class="w-100" alt="movie image">
         <h3 class="h6">{{movie.title}}</h3>
         <div class="vote position-absolute end-0 top-0">{{movie.vote_average}}</div>
