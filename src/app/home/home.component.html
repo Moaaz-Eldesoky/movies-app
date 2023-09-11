@@ -1,1 +1,50 @@
-<p>home works!</p>
+<div class="row mt-5">
+  <div class="col-md-4">
+    <div class="bordr my-5 w-50"></div>
+    <h2>Trending Movies<br>To Watch Right Now...</h2>
+    <p class="second-color">Trending Movies To Watch Right Now...</p>
+    <div class="bordr my-5 w-50"></div>
+  </div>
+
+  <div *ngFor="let movie of trendingMovies" class="col-2 position-relative">
+      <div class="movie ">
+        <img [src]="imagePrefix+movie.poster_path" class="w-100" alt="movie image">
+        <h3 class="h6">{{movie.title}}</h3>
+        <div class="vote position-absolute end-0 top-0">{{movie.vote_average}}</div>
+      </div>
+  </div>
+</div>
+
+<div class="row mt-5">
+  <div class="col-md-4">
+    <div class="bordr my-5 w-50"></div>
+    <h2>Trending TV<br>To Watch Right Now...</h2>
+    <p class="second-color">Trending TV To Watch Right Now...</p>
+    <div class="bordr my-5 w-50"></div>
+  </div>
+
+  <div *ngFor="let movie of trendingTV" class="col-2 position-relative">
+      <div class="movie ">
+        <img [src]="imagePrefix+movie.poster_path" class="w-100" alt="movie image">
+        <h3 class="h6">{{movie.name}}</h3>
+        <div class="vote position-absolute end-0 top-0">{{movie.vote_average}}</div>
+      </div>
+  </div>
+</div>
+
+<div class="row mt-5">
+  <div class="col-md-4">
+    <div class="bordr my-5 w-50"></div>
+    <h2>Trending People<br>To Watch Right Now...</h2>
+    <p class="second-color">Trending People To Watch Right Now...</p>
+    <div class="bordr my-5 w-50"></div>
+  </div>
+
+  <div *ngFor="let movie of trendingPeople" class="col-2 position-relative">
+      <div class="movie ">
+        <img [src]="imagePrefix+movie.profile_path" class="w-100" alt="movie image">
+        <h3 class="h6">{{movie.name}}</h3>
+        <div class="vote position-absolute end-0 top-0">{{movie.vote_average}}</div>
+      </div>
+  </div>
+</div>

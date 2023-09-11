@@ -10,3 +10,16 @@ a{
   text-decoration: none;
   color:#FFF;
 }
+.vote{
+  background-color: #24baef;
+  padding: 5px;
+  font-weight: 900;
+  color: #FFF;
+}
+.second-color{
+  color:#949cb0;
+}
+.bordr{
+  background-color: #a8a8a83d;
+  height: 2px;
+}
