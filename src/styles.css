@@ -1,25 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
-  @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
 
-body{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap');
+
+
+body {
   background-color: #131722 !important;
-  color:#FFF;
+  color: #FFF;
   font-family: 'Montserrat Alternates', sans-serif;
 }
-a{
+
+a {
   text-decoration: none;
-  color:#FFF;
+  color: #FFF;
 }
-.vote{
+
+.vote {
   background-color: #24baef;
   padding: 5px;
   font-weight: 900;
   color: #FFF;
 }
-.second-color{
-  color:#949cb0;
+
+.second-color {
+  color: #949cb0;
 }
-.bordr{
+
+.bordr {
   background-color: #a8a8a83d;
   height: 2px;
 }

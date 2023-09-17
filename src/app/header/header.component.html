@@ -1,0 +1,45 @@
+<header class="vh-100 mb-4">
+  <!-- <h2>this is moaaz eldesoky {{c_trendingMovies|json}}</h2> -->
+  <!-- <div id="carouselExampleControls" class="carousel slide" data-mdb-ride="carousel" >
+    <div class="carousel-inner">
+        <div class="carousel-item " *ngFor="let slide of c_trendingMovies">
+          <img [src]="imagePrefix+slide.poster_path" class="w-100" alt="movie image" [title]="slide.title">
+            <img src="https://mdbcdn.b-cdn.net/img/new/slides/041.webp" class="d-block w-100" alt="Wild Landscape" />
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleControls" data-mdb-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div> -->
+  <div id="carouselId" class="carousel slide " data-bs-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+      <div class="carousel-item active">
+        <div class="row">
+          <div class="col-md-2" *ngFor="let movie of c_trendingMovies.slice(0,6)">
+            <img [src]="imagePrefix+movie.poster_path" class="w-100" alt="movie image" [title]="movie.title">
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="row">
+          <div class="col-md-2" *ngFor="let movie of c_trendingMovies.slice(4,12)">
+            <img [src]="imagePrefix+movie.poster_path" class="w-100" alt="movie image" [title]="movie.title">
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</header>

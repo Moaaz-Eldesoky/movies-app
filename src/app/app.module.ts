@@ -15,6 +15,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { LogoutComponent } from './logout/logout.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { HeaderComponent } from './header/header.component';
+
 
 @NgModule({
   declarations: [
@@ -28,13 +30,14 @@ import { HttpClientModule } from '@angular/common/http';
     MoviedetailsComponent,
     NotfoundComponent,
     NavbarComponent,
-    LogoutComponent
+    LogoutComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

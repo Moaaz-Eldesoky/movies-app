@@ -8,6 +8,7 @@ import { RegisterComponent } from './register/register.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { LogoutComponent } from './logout/logout.component';
 import { MoviedetailsComponent } from './moviedetails/moviedetails.component';
+import { HeaderComponent } from './header/header.component';
 
 const routes: Routes = [
   {path:'' ,redirectTo:'home',pathMatch:'full' },
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path:'login' , component:LoginComponent},
   {path:'register' , component:RegisterComponent},
   {path:'logout' , component:LogoutComponent},
+  {path:'ddd' , component:HeaderComponent},
   {path:'**' , component:NotfoundComponent}
 ];
 

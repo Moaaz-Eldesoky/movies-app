@@ -1,0 +1,30 @@
+
+
+header{
+  background-image: url(../../assets/wallpaperflare.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+/* Adjust the size of the carousel images */
+.carousel-item img {
+  max-width: 90%;
+  height: auto;
+  margin: 0 auto; /* Centers the images horizontally */
+  border-radius: 8px;
+}
+
+/* Limit the width of the carousel container */
+.carousel {
+  /* max-width: 800px; Adjust this value to your desired width */
+  top:450px;
+  margin: 0 auto; /* Centers the carousel horizontally */
+}
+.carousel-item .row {
+  display: flex;
+  justify-content: center;
+  margin-left:10px;
+  margin-bottom:50px;
+}
+.carousel-item .col-md-2 {
+  margin-left: -20px;
+}
