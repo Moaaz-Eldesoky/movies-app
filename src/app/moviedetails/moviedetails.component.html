@@ -1,12 +1,18 @@
-<div class="row">
-  <div class="col-6 position-relative">
-    <div class="movie">
-      <img [src]="imagePrefix+movieDetails.poster_path" class="w-100" alt="movie image">
-      <div class="vote position-absolute end-0 top-0">{{movieDetails.vote_average}}</div>
+<div class="container">
+  <div class="movie-details">
+    <div class="row">
+      <div class="col-6 position-relative">
+        <div class="movie">
+          <img [src]="imagePrefix+movieDetails.poster_path" class="w-100" alt="movie image">
+          <div class="vote position-absolute end-0 top-0">{{movieDetails.vote_average}}</div>
+        </div>
+      </div>
+      <div class="col-6">
+        <h3 >{{movieDetails.title}}</h3>
+        <p>{{movieDetails.overview}}</p>
+        <input class="btn btn-success controler" value="Watch Now">
+        <input class="btn btn-primary controler" value="Download Now">
+      </div>
     </div>
-  </div>
-  <div class="col-6">
-    <h3 class="h6">{{movieDetails.title}}</h3>
-    <p>{{movieDetails.overview}}</p>
   </div>
 </div>

@@ -1,0 +1,19 @@
+.movie-details{
+  margin-top:300px;
+}
+.movie-details .col-6:last-child{
+  padding: 90px 30px;
+}
+.movie-details h1{
+  font-size: 40rem;
+  color: red;
+}
+.movie-details p{
+  margin-top: 100px;
+}
+.movie-details .controler{
+  margin-top: 50px;
+  padding: 30px 10px;
+  margin-left: 20px;
+  font-size: 20px;
+}
